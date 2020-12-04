@@ -60,7 +60,7 @@ const Header = props => {
     navBtnClassName = "navBtn"
     navBtnContact = "navBtnContact"
   }
-  const dbUrl = window.location.origin === 'https://hasura.io' ? 'https://data.hasura.io/v1/query' : 'https://data.hasura-stg.hasura-app.io/v1/query'
+  const dbUrl = "https://data.hasura.io/v1/query";
   const [githubCount, setGithubCount] = useState(null)
   const githubStarCount = () => {
     const bodyObj = {
